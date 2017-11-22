@@ -66,12 +66,12 @@ body {
   margin: 0; }
 .logo-primary {
   font-size:0;
-    /* background-image: url('Pascal.jpg') no-repeat center center; */
+    background-image: url('Pascal.jpg') no-repeat center center;
     display:block;
     height:90px;
     width:90px;
     background-size: contain;
-    margin:0 auto 0
+    margin: 0 auto 0
 }
 section.section-empty {
   display: none; }
