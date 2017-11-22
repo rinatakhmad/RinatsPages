@@ -65,8 +65,9 @@ body {
   background-repeat: no-repeat;
   margin: 0; }
 .logo-primary {
+  position: relative;
   font-size:0;
-    background-image: url('Pascal.jpg') no-repeat center center;
+    background: url("https://rinatakhmad.github.io/RinatsPages/Pascal.jpg") no-repeat center center;
     display:block;
     height:90px;
     width:90px;
@@ -120,7 +121,7 @@ p, ul, ol {
   font-size: 1.25rem;
   border-radius: 4px;
   cursor: pointer;
-  color: #3f6dac;
+  color: #1994d7;
   -webkit-transition: background-color 100ms;
   transition: background-color 100ms; }
   .btn:focus, .btn:hover {
@@ -133,7 +134,7 @@ p, ul, ol {
   .btn-primary:hover, .btn-email:hover, .btn-facebook:hover, .btn-google-plus:hover {
     color: #f4f5f5; }
 .btn-primary {
-  background-color: #00a1cf; }
+  background-color: #1994d7; }
   .btn-primary:focus, .btn-primary:hover {
     text-decoration: none;
     background-color: #3f6dac; }
@@ -141,9 +142,12 @@ p, ul, ol {
     background-color: #d0d2d3; }
 .btn-secondary {
   display: inline-block;
+  border: 1px solid #1994d7;
+  border-radius: 4px;
   width: auto; }
   .btn-secondary:focus, .btn-secondary:hover {
-    outline: 1px solid #3f6dac;
+    border: 1px solid #3f6dac;
+    border-radius: 4px;
     text-decoration: none; }
 .btn-email, .btn-facebook, .btn-google-plus {
   padding-left: 42px; }
@@ -232,21 +236,21 @@ p, ul, ol {
   padding: 0.5em 0;
   display: block; }
 .field .message-error {
-  color: #ca2b81; }
+  color: #ff4605; }
 .field {
   position: relative;
   margin-bottom: 18px; }
 .field-compact {
   display: inline-block; }
 .field-error .name {
-  color: #ca2b81; }
+  color: #ff4605; }
 .field-error input:not([type="checkbox"]):not([type="radio"]), .field-error input:not([type="checkbox"]):not([type="radio"]):focus, .field-error select, .field-error select:focus {
-  border: 1px solid #ca2b81;
-  box-shadow: 0 0 0 1px #ca2b81; }
+  border: 1px solid #ff4605;
+  box-shadow: 0 0 0 1px #ff4605; }
 .field-error input:not([type="checkbox"]):not([type="radio"])::-webkit-input-placeholder {
   color: #ca2b81; }
 .field-error input:not([type="checkbox"]):not([type="radio"])::-moz-placeholder {
-  color: #ca2b81; }
+  color: #ff4605; }
 .field-error input:not([type="checkbox"]):not([type="radio"]):-ms-input-placeholder {
   color: #ca2b81; }
 .name {
