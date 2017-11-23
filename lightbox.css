@@ -195,26 +195,21 @@ p, ul, ol {
       .btn-google-plus::before {
         background-image: url("../images/icon_2x/google-plus-icon-2x.png"); } }
 .btn-delete {
-  color: #ca2b81; }
-.message {
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: height 250ms;
-  transition: height 250ms; }
-  .message .container {
+  color: #ca2b81; 
+}
+.message .container {
     opacity: 0;
-    -webkit-transition: opacity 250ms;
-    transition: opacity 250ms; }
-    .message .container > * {
-      margin-bottom: 1rem; }
-      .message .container > *:last-child {
-        margin-bottom: 0; }
-  .message.state-calculating {
-    -webkit-transition: height 0ms;
-    transition: height 0ms;
+  }
+.message .container > * {
+      margin-bottom: 1rem; 
+}
+.message .container > *:last-child {
+        margin-bottom: 0; 
+}
+.message.state-calculating {
     position: absolute;
     height: auto; }
-  .message.state-active .container {
+.message.state-active .container {
     opacity: 1; }
 .banner .container {
   border-radius: 4px;
