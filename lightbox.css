@@ -516,7 +516,7 @@ body .no-animate {
 .banner.message-error .container {
  background:#f4d7e7;
  border:1px solid #e897c3;
- color:#aa0f63
+ color:#aa0f00;
 }
 .banner.message-success .container {
  background:#ddefd4;
@@ -2729,7 +2729,7 @@ p,ul,ol {
  display:block
 }
 .message.state-active .container {
- opacity:1
+ opacity:1;
 }
 .no-height:not(.state-calculating),.message.no-height:not(.state-calculating) {
  overflow:hidden;
@@ -2747,7 +2747,7 @@ body .no-animate {
 .banner .container {
  border-radius:4px;
  padding:18px;
- margin-bottom:18px
+ margin-bottom:18px;
 }
 .banner a {
  color:#266599
@@ -2758,9 +2758,9 @@ body .no-animate {
  color:#396e99
 }
 .banner.message-error .container {
- background:#f4d7e7;
- border:1px solid #e897c3;
- color:#aa0f63
+ background:transparent;
+ border: none;
+ color: #ff4605;
 }
 .banner.message-success .container {
  background:#ddefd4;
@@ -2840,20 +2840,20 @@ body .no-animate {
  border:2px solid #ca2881
 }
 .field-error input:not([type="checkbox"]):not([type="radio"]),.field-error input:not([type="checkbox"]):not([type="radio"]):focus,.field-error select,.field-error select:focus {
- border:2px solid #ca2881;
- padding:0 8px
+ border:2px solid #ff4605;
+ padding: 0 8px
 }
 .field-error input:not([type="checkbox"]):not([type="radio"]).placeholder,.field-error select.placeholder {
- color:#ca2881
+ color:#ff4605
 }
 .field-error input:not([type="checkbox"]):not([type="radio"])::-webkit-input-placeholder {
- color:#ca2881
+ color:#ff4605
 }
 .field-error input:not([type="checkbox"]):not([type="radio"])::-moz-placeholder {
- color:#ca2881
+ color:#ff4605
 }
 .field-error input:not([type="checkbox"]):not([type="radio"]):-ms-input-placeholder {
- color:#ca2881
+ color:#ff4605
 }
 .field-error select,.field-error select:focus {
  margin-right:8px;
@@ -3074,14 +3074,20 @@ input:not([type="checkbox"]):not([type="radio"]),select,.toggle .name {
  height:42px;
  line-height:42px;
  padding:0 9px;
- border:1px solid #d7d7d7;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+ border-bottom:1px solid lightgray;
  background:white;
  outline:none;
  box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
- border-radius:4px
+  border-radius: 0px;
 }
 input:not([type="checkbox"]):not([type="radio"]):focus,select:focus,.toggle .name:focus {
  border:2px solid #0593e9;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
  padding:0 8px;
  -webkit-transition:border-color 200ms;
  transition:border-color 200ms
@@ -4219,17 +4225,23 @@ body {
 .header {
  color:#144b97
 }
-.logo-primary {
- font-size:1.25rem
-}
-.logo-primary span {
- display:block;
- height:54px;
- font-size:0;
- white-space:nowrap;
- overflow:hidden;
- background:no-repeat center center transparent;
- background-size:contain
+.logo {
+   display: inline-block;
+   font-size: 2rem;
+   vertical-align: top;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   margin: 0; }
+ .logo-primary {
+  position: relative;
+   font-size:0;
+    background-image: url('Pascal.jpg') no-repeat center center;
+    background: url("https://rinatakhmad.github.io/RinatsPages/Pascal.jpg") no-repeat center center;
+     display:block;
+     height:90px;
+     width:90px;
+     background-size: contain;
+     margin: 0 auto 0
 }
 a {
  border-bottom:1px dotted #0377d4
@@ -4287,14 +4299,15 @@ a:hover,a:focus {
  background:#7DBD42
 }
 .field .message-error {
- color:#ca2881
+ color:#ff4605;
 }
 .field .input-wrapper {
  display:block
 }
 .field-error input:not([type='checkbox']):not([type='radio']),.field-strong-info input:not([type='checkbox']):not([type='radio']) {
  padding-right:32px;
- border:2px solid #ca2881
+ border:1px solid #ff4605;
+  border-radius: 4px;
 }
 .field-strong-info input:not([type='checkbox']):not([type='radio']) {
  border-color:#357ab7
@@ -4307,11 +4320,11 @@ a:hover,a:focus {
  display:block
 }
 .field.badgeable.field-error .input-wrapper::after,.field.badgeable.field-strong-info .input-wrapper::after {
- background-image:url("data:image/svg+xml,%3Csvg style='fill:%23fff;' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36' height='36' width='36' preserveAspectRatio='none slice'%3E%3Cpath d='M20.4,6.8c-0.5-0.2-1-0.3-1.4-0.3c-0.8,0-1.5,0.2-2.1,0.7l0,0l0,0c-0.2,0.2-0.2,0.6-0.2,0.9c0,0.3,0.1,0.7,0.1,1.3l0.1,0.4 c0,0.2,0.1,0.4,0.1,0.5c0.1,0.4,0.1,0.8,0.1,1c0,0.9-0.2,2.3-0.6,4c-0.4,1.8-0.6,3.3-0.6,4.2c0,0.9,0.2,1.7,0.6,2.4l0.1,0.1l0.1,0.1 c0.4,0.2,0.9,0.4,1.4,0.4c0.2,0,0.6,0,0.9-0.2l0.1,0l0.1-0.1c0.3-0.3,0.6-0.6,0.7-0.8l0.1-0.2l0-0.2c-0.2-0.9-0.3-1.5-0.3-2 c0,0,0-0.1,0-0.2c0-0.1,0.1-0.3,0.1-0.4c0.1-0.3,0.1-0.6,0.1-0.7c0.1-0.6,0.1-1.2,0.1-1.8c0.1-1.4,0.2-2.3,0.2-2.7 c0.2-1.9,0.5-3.2,0.9-4.1c0.2-0.1,0.3-0.3,0.4-0.5c0.2-0.3,0.2-0.6,0.2-0.7C21.4,7.5,20.9,6.9,20.4,6.8z'/%3E%3Cpath d='M19,25.2c-0.5-0.2-1.2-0.3-1.8-0.3c-1.7,0-2.6,0.7-2.6,2.2c0,0.4,0.2,0.9,0.5,1.5l0.1,0.2l0.2,0.1c1.3,0.6,1.8,0.6,2,0.6 c2,0,3.1-1,3.1-2.8C20.5,25.9,19.7,25.5,19,25.2z'/%3E%3C/svg%3E");
+ background-image: none;
  display:block
 }
 .field.badgeable.field-error .input-wrapper::after {
- background-color:#ca2881
+ background-color: none;
 }
 .field.badgeable.field-strong-info .input-wrapper::after {
  background-color:#357ab7
@@ -4358,8 +4371,9 @@ a:hover,a:focus {
  }
 }
 .banner.message-error .container {
- background-color:#f4d7e7;
- background-image:url("/v2/inner/images/icon/error.png")
+ background-color: transparent;
+ background-image:url('data:image/svg+xml,%3Csvg%20fill%3D%22%23FF6405%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M1%2021h22L12%202%201%2021zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z%22%2F%3E%0A%3C%2Fsvg%3E');
+    
 }
 @media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
  .banner.message-error .container {
@@ -4622,5 +4636,6 @@ input:not([type='checkbox']):not([type='radio']),select,.toggle .name,.toggle la
   display:block
  }
 }
+
 
 
