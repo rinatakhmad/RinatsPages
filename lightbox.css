@@ -590,26 +590,26 @@ body .no-animate {
  display:inline-block
 }
 .field-error .name {
- color:#ca2881
+ color: #ff4605
 }
 .field-error .checkbox .name::before {
- border:2px solid #ca2881
+ border:2px solid #ff4605
 }
 .field-error input:not([type="checkbox"]):not([type="radio"]),.field-error input:not([type="checkbox"]):not([type="radio"]):focus,.field-error select,.field-error select:focus {
- border:2px solid #ca2881;
+ border:2px solid #ff4605;
  padding:0 8px
 }
 .field-error input:not([type="checkbox"]):not([type="radio"]).placeholder,.field-error select.placeholder {
- color:#ca2881
+ color:#ff4605
 }
 .field-error input:not([type="checkbox"]):not([type="radio"])::-webkit-input-placeholder {
- color:#ca2881
+ color:#ff4605
 }
 .field-error input:not([type="checkbox"]):not([type="radio"])::-moz-placeholder {
- color:#ca2881
+ color:#ff4605
 }
 .field-error input:not([type="checkbox"]):not([type="radio"]):-ms-input-placeholder {
- color:#ca2881
+ color:#ff4605
 }
 .field-error select,.field-error select:focus {
  margin-right:8px;
@@ -4330,10 +4330,10 @@ a:hover,a:focus {
  background-color:#357ab7
 }
 .field-error .checkbox .name {
- color:#ca2881
+ color:#ff4605
 }
 .field-dob.field-error .mask::after {
- color:#ca2881
+ color:#ff4605
 }
 .field-new-password .strength-meter .meter-state.state-ok,.field-new-password .strength-meter .meter-state.state-strong {
  background-image:url("data:image/svg+xml,%3Csvg style='fill:%237DBD42;' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36' height='36' width='36' preserveAspectRatio='none slice'%3E%3Cpath d='M29.6,8.5c-0.2-0.6-0.6-1.2-1.1-1.6c-0.4-0.3-0.8-0.4-1.4-0.4c-0.8,0-1.5,0.4-2,1l0,0l0,0L14.7,23.2l-4-4 c-0.4-0.5-1.1-0.8-1.8-0.8c-0.9,0-1.6,0.6-1.8,0.8c-0.5,0.5-0.8,1.1-0.8,1.8c0,0.8,0.3,1.4,0.9,1.7l6.1,6.1c0.5,0.5,1.1,0.8,1.8,0.8 h0.1c0.8,0,1.5-0.4,2-1.1l12.1-18C29.6,9.8,29.7,9.1,29.6,8.5z'/%3E%3C/svg%3E")
