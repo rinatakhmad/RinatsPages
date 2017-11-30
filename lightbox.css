@@ -2834,10 +2834,10 @@ body .no-animate {
  display:inline-block
 }
 .field-error .name {
- color:#ca2881
+ color:#ff4605
 }
 .field-error .checkbox .name::before {
- border:2px solid #ca2881
+ border:2px solid #ff4605
 }
 .field-error input:not([type="checkbox"]):not([type="radio"]),.field-error input:not([type="checkbox"]):not([type="radio"]):focus,.field-error select,.field-error select:focus {
  border:2px solid #ff4605;
